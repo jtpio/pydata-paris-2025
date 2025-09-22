@@ -5,6 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "jupytercad-core>=3.1.7",
+    "jupytercad-lab>=3.1.7",
+    "jupytercad-lite>=3.1.7",
     "jupyterlab>=4.5.0a3",
     "jupyterlab-browser-ai>=0.1.1",
     "jupyterlite>=0.7.0a5",
