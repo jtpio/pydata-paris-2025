@@ -1,5 +1,6 @@
 {
   "@jupyterlab/notebook-extension:tracker": {
+    "useSecretsManager": false,
     "windowingMode": "none"
   }
 }
