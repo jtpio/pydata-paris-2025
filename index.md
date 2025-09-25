@@ -86,17 +86,41 @@ Nicolas Brichet
 
 # Chat with Remote Models
 
+Connect to AI providers, directly from your browser:
+
+- Anthropic
+- OpenAI
+- Mistral
+
+---
+
+TODO: screencast
+
 ---
 
 # Agent Mode
+
+-
 
 ---
 
 # Accept / Reject Diffs
 
+`jupyterlab-cell-diff` provides a command to display diffs under input cells:
+
+TODO: screenshot
+
+---
+
+TODO: screencast for showing diffs
+
 ---
 
 # Execute JupyterLab Commands
+
+- Expose arbitrary JupyterLab commands as `tools` to the agent.
+- `discover_commands` to find available commands
+- `execute_command` to execute a command
 
 ---
 
