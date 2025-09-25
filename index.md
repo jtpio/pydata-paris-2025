@@ -50,25 +50,7 @@ Nicolas Brichet
 
 # Agenda
 
-<div class="columns">
-<div>
-
-- [Introduction to JupyterLite](#4)
-- [Chat with remote models](#5)
-- [Agent mode](#6)
-- [Remote MCP servers](#9)
-- [AI workflows (voice, image)](#10)
-
-</div>
-<div>
-
-- [Transformers.js demo](#11)
-- [Built-in AI](#12)
-- [The case of privacy](#13)
-- [What's next?](#14)
-
-</div>
-</div>
+TODO
 
 ---
 
@@ -86,27 +68,78 @@ Nicolas Brichet
 
 # Chat with Remote Models
 
+Connect to AI providers, directly from your browser:
+
+- Anthropic
+- OpenAI
+- Mistral
+
+---
+
+TODO: screencast
+
+---
+
+# Code completion
+
+- Configure a different model for code completion
+
+---
+
+TODO: screencast
+
 ---
 
 # Agent Mode
+
+- Tool calling
+- Approve or reject tool calls
+- Add context
+
+---
+
+TODO: screencast
 
 ---
 
 # Accept / Reject Diffs
 
+`jupyterlab-cell-diff` provides a command to display diffs under input cells:
+
+TODO: screenshot
+
+---
+
+TODO: screencast for showing diffs
+
 ---
 
 # Execute JupyterLab Commands
 
+- Expose JupyterLab commands as `tools` to the agent.
+- `discover_commands` to find available commands
+- `execute_command` to execute a command
+
 ---
 
-# MCP
+# Model Context Protocol (MCP)
 
-- What is MCP?
+- open-source standard for connecting AI applications to external systems:
+  - Tools
+  - Resources
+  - Prompts
 
 ---
 
 # Remote MCP Servers
+
+- The server is hosted somewhere else
+- Available from any MCP client with an internet connection
+- Ideal for web-based AI applications
+
+---
+
+TODO: screencast with DeepWiki
 
 ---
 
@@ -118,20 +151,32 @@ Nicolas Brichet
 
 ---
 
-# Transformers.js Demo
+# In-Browser AI libraries
+
+- [Transformers.js](https://huggingface.github.io/transformers.js/)
+- [WebLLM](https://webllm.mlc.ai/)
 
 ---
 
-# Beyond Code
+# WebLLM Demo
 
-- Transcription
-- Image recognition
+TODO: screencast
 
 ---
 
-# Built-in AI Future
+# Built-in AI
 
-- ChromeAI
+- Chrome: Gemini Nano
+- Edge: Phi mini
+
+---
+
+# Not just about code
+
+ChromeAI Multimodal capabilities:
+
+- Generate alt text for images
+- Transcribe audio to text
 
 ---
 
@@ -143,14 +188,32 @@ Nicolas Brichet
 
 ---
 
-# What's Next?
+# Limitations of In-Browser AI
 
-- Enhanced AI integration
-- More model support
+- Model size
+- The model must be downloaded before use
+- Performance
+- Browser and hardware compatibility
+- Secret management
 
 ---
 
-# Thanks!
+# Building blocks for AI in Jupyter
+
+- Towards modular and extensible components
+- Extension authors can provide more functionalities via JupyterLab commands
+- Hybrid workflows (server + browser)
+
+---
+
+# What's Next?
+
+- Support for more models and providers
+- CLI tools via `jupyterlite-terminal`
+
+---
+
+# References
 
 - Presentation: https://github.com/jtpio/pydata-paris-2025
 - Live version: https://jtpio.github.io/pydata-paris-2025/files/index.html
