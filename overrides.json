@@ -1,5 +1,8 @@
 {
   "@jupyterlab/notebook-extension:tracker": {
     "windowingMode": "none"
+  },
+  "@jupyterlite/ai:settings-model": {
+    "useSecretsManager": false
   }
 }

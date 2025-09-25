@@ -684,14 +684,14 @@ wheels = [
 
 [[package]]
 name = "jupyterlab-browser-ai"
-version = "0.3.0"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jupyterlite-ai" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b3/18/ca9bdc137cac309159322a320a85ac368915eac6821dbebe6b7731b159d6/jupyterlab_browser_ai-0.3.0.tar.gz", hash = "sha256:777447bba57dade2cb0f745ab8f0abe97c2817ea5a64a72b2a7ca00b5771a8db", size = 2222371, upload-time = "2025-09-25T09:13:37.209Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7f/3e/1ca4a139b5ed99d22297edb8351bc97491015aef6e1e2cc8ee6f47b8fd2c/jupyterlab_browser_ai-0.4.0.tar.gz", hash = "sha256:19acab6b807d20d9335cb6f4d2b7e67fea6f7bc1d78f9d2418853ee6eabfde23", size = 2224105, upload-time = "2025-09-25T16:44:06.303Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3e/b8/2e9171bb6988e5d74ee288eb278e9aca8d329b140ac9911cde727a081f4f/jupyterlab_browser_ai-0.3.0-py3-none-any.whl", hash = "sha256:d70fe6443e8737c27f66d29f92a86a3dba056efbd8162c56d6182dccffdf87ae", size = 2137060, upload-time = "2025-09-25T09:13:35.118Z" },
+    { url = "https://files.pythonhosted.org/packages/e2/e9/fdce2aed1d5c90f8bec78a879acac3119d256699591a2400997b285dc8ef/jupyterlab_browser_ai-0.4.0-py3-none-any.whl", hash = "sha256:d1b411e065459895cfda6a0e26d76c4bbf5e1c808d12b98ffa3ff3e6f2bc076a", size = 2137733, upload-time = "2025-09-25T16:44:04.497Z" },
 ]
 
 [[package]]
@@ -769,15 +769,15 @@ wheels = [
 
 [[package]]
 name = "jupyterlite-ai"
-version = "0.9.0a0"
+version = "0.9.0a1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jupyter-secrets-manager" },
     { name = "jupyterlab-cell-diff" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4b/56/1afc83794353b7831020b764495d8f4425cb11e40312b28403fca722c2af/jupyterlite_ai-0.9.0a0.tar.gz", hash = "sha256:468997db410fc12faf32065ebaf8995253c92fe2b81cf5680b8c17b7eadb874d", size = 1035786, upload-time = "2025-09-18T07:00:12.082Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a9/2e/d7f675307376718e875ffd23b29ebe1b1840c99fe63c0a1cda3d14eeacd5/jupyterlite_ai-0.9.0a1.tar.gz", hash = "sha256:5f107b5238b4a8d88fab54482fb9cac63e94e6e341098b5be2d20c8d7202a4ad", size = 1051247, upload-time = "2025-09-25T16:04:54.369Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9a/40/b458524ba3e77296bec6debc4cc492fac45c636cadfad6f35cce01249299/jupyterlite_ai-0.9.0a0-py3-none-any.whl", hash = "sha256:b14df24a0729efff46e89c3137f9a8af96d2387de83372cfc8dda39a37793921", size = 505547, upload-time = "2025-09-18T07:00:09.596Z" },
+    { url = "https://files.pythonhosted.org/packages/55/bb/7a43d546aa9cd30689bc1e80d1ab20f320b902da6adf1855242518c35b13/jupyterlite_ai-0.9.0a1-py3-none-any.whl", hash = "sha256:3f54fc16e0be7a1ce2bb16e18c9a7570780e21af0bdf41e2af684a742f04a43a", size = 520953, upload-time = "2025-09-25T16:04:52.413Z" },
 ]
 
 [[package]]
@@ -1077,9 +1077,9 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "jupyterlab", specifier = ">=4.5.0a3" },
-    { name = "jupyterlab-browser-ai", specifier = ">=0.3.0" },
+    { name = "jupyterlab-browser-ai", specifier = ">=0.4.0" },
     { name = "jupyterlite", specifier = ">=0.7.0a5" },
-    { name = "jupyterlite-ai", specifier = ">=0.9.0a0" },
+    { name = "jupyterlite-ai", specifier = ">=0.9.0a1" },
     { name = "jupyterlite-core", specifier = ">=0.7.0a5" },
     { name = "jupyterlite-pyodide-kernel", specifier = ">=0.7.0a2" },
 ]
