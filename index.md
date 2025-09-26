@@ -207,7 +207,7 @@ TODO: screencast
 ---
 
 <div class="prompt-box">
-  Use of `pandas` with `polars` in this cell
+  Use `pandas` instead of `polars` in this cell
   <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
     Copy
   </button>
@@ -221,13 +221,13 @@ TODO: screencast for showing diffs
 
 # Execute JupyterLab Commands
 
-- Expose JupyterLab commands as `tools` to the agent.
+- Expose JupyterLab commands as `tools` to the agent:
   - `discover_commands` to find available commands
   - `execute_command` to execute a command
 
 ---
 
-# JupyterLab Commands
+# Control JupyterLab with natural language
 
 - "toggle the right area"
 - "show the about dialog"
@@ -295,7 +295,7 @@ TODO: screencast with DeepWiki
   </tr>
   <tr>
     <td style="text-align: center;"><img src="images/huggingface.svg" alt="Hugging Face"></td>
-    <td style="text-align: center;"><a href="https://huggingface.github.io/transformers.js">Transformers.js</a></td>
+    <td style="text-align: center;"><a href="https://huggingface.co/docs/transformers.js/index">Transformers.js</a></td>
   </tr>
 </table>
 
@@ -330,7 +330,7 @@ TODO: screencast
 
 # Not just about code
 
-ChromeAI Multimodal capabilities:
+ChromeAI multimodal capabilities:
 
 - Generate alt text for images
 - Transcribe audio to text
@@ -355,9 +355,9 @@ TODO: screencast for audio transcription
 
 # Limitations
 
-- Model size
+- Model size (300MB - 1GB - 22GB)
 - The model must be downloaded before use
-- Performance
+- Performance (requires good hardware)
 - Browser, flags and hardware compatibility
 - MCP:
   - Some remote MCP servers can work
@@ -368,7 +368,7 @@ TODO: screencast for audio transcription
 # Secrets Management
 
 - Store secrets in the browser
-- Or use the secrets manager for custom connectors:
+- Or use the secrets manager with custom connectors:
   - https://github.com/jupyterlab-contrib/jupyter-secrets-manager
 
 ---
