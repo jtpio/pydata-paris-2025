@@ -108,7 +108,14 @@ Nicolas Brichet
 
 # Agenda
 
-TODO
+- **JupyterLite**
+- **Remote AI Models**
+- **Agent Mode**
+- **Model Context Protocol**
+- **In-Browser LLMs**
+- **Built-in AI**
+- **Privacy & Limitations**
+- **What's Next?**
 
 ---
 
@@ -156,17 +163,13 @@ Connect to AI providers, directly from your browser (without a Python server)
 
 ---
 
-TODO: screencast
-
----
-
 # Code completion
 
 ![](images/completions.png)
 
 ---
 
-TODO: screencast
+![bg fit](images/completions-demo.png)
 
 ---
 
@@ -194,7 +197,13 @@ TODO: screencast
 
 ---
 
-TODO: screencast
+
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/e33d7d84-53ca-4835-a034-b6757476c98b">
+</video>
 
 ---
 
@@ -215,7 +224,12 @@ TODO: screencast
 
 ---
 
-TODO: screencast for showing diffs
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/329af10f-b602-4be6-9adf-636c2fa7de94">
+</video>
 
 ---
 
@@ -244,7 +258,13 @@ TODO: screencast for showing diffs
 
 ---
 
-TODO: screencast with JupyterCad
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/1bebdc78-c26f-4b63-9b7c-24bf14cc6a21">
+</video>
+
 
 ---
 
@@ -272,7 +292,12 @@ https://modelcontextprotocol.io
 
 ---
 
-TODO: screencast with DeepWiki
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/b0c6f37c-9dc8-493d-9fe8-4ef53ab77fd8">
+</video>
 
 ---
 
@@ -303,9 +328,12 @@ TODO: screencast with DeepWiki
 
 ---
 
-# WebLLM Demo
-
-TODO: screencast
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/c9dd79c2-99bf-4c4e-b4b8-9b1cf76fc165">
+</video>
 
 ---
 
@@ -337,11 +365,21 @@ ChromeAI multimodal capabilities:
 
 ---
 
-TODO: screencast fot alt text generation
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/da53a662-af35-4302-b72f-dcf9eecefb45">
+</video>
 
 ---
 
-TODO: screencast for audio transcription
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/1ffab2d6-94f3-4b53-abac-374f0adc33b7">
+</video>
 
 ---
 
