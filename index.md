@@ -10,6 +10,10 @@ style: |
   .center {
     text-align: center;
   }
+  .center-table {
+    display: flex;
+    justify-content: center;
+  }
 ---
 
 <style>
@@ -73,7 +77,7 @@ Nicolas Brichet
 - Nicolas Brichet
 - QuantStack
 
-![bg fit right :33%](images/qs.svg)
+![bg fit right:33%](images/qs.svg)
 
 ---
 
@@ -103,6 +107,7 @@ Connect to AI providers, directly from your browser:
 - OpenAI
 - Mistral
 - Ollama
+- More via extensions
 
 ---
 
@@ -121,8 +126,6 @@ TODO: screencast
 
 # Code completion
 
-- Configure a different model for code completion
-
 ![](images/completions.png)
 
 ---
@@ -133,9 +136,25 @@ TODO: screencast
 
 # Agent Mode
 
+- Easily create new notebooks
 - Tool calling
 - Approve or reject tool calls
-- Add context
+
+---
+
+<div class="prompt-box">
+  Create a demo notebook about pandas and matplotlib
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
+
+<div class="prompt-box">
+  Now clear all the outputs and run all the cells in the notebook
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
 
 ---
 
@@ -152,7 +171,7 @@ TODO: screencast
 ---
 
 <div class="prompt-box">
-  Replace the use of `pandas` with `polars` in this cell
+  Use of `pandas` with `polars` in this cell
   <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
     Copy
   </button>
@@ -167,17 +186,37 @@ TODO: screencast for showing diffs
 # Execute JupyterLab Commands
 
 - Expose JupyterLab commands as `tools` to the agent.
-- `discover_commands` to find available commands
-- `execute_command` to execute a command
+  - `discover_commands` to find available commands
+  - `execute_command` to execute a command
 
 ---
 
+<div class="prompt-box">
+  Create an empty .jcad file. Once opened, build a chess pawn, step by step, using the available jupytercad commands
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
+
+---
+
+TODO: screencast with JupyterCad
+
+---
+
+
 # Model Context Protocol (MCP)
 
-- open-source standard for connecting AI applications to external systems:
+- Open-source standard for connecting AI applications to external systems:
   - Tools
   - Resources
   - Prompts
+
+> Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems.
+
+https://modelcontextprotocol.io
+
+![bg fit right:20%](images/mcp.png)
 
 ---
 
@@ -193,18 +232,30 @@ TODO: screencast with DeepWiki
 
 ---
 
-# In-Browser AI
+# LLMs in the Browser
 
 - Run models directly in browser
 - No server dependencies
-- Privacy-preserving AI
+- Privacy-focused: no requests to external servers
 
 ---
 
 # In-Browser AI libraries
 
-- [Transformers.js](https://huggingface.github.io/transformers.js/)
-- [WebLLM](https://webllm.mlc.ai/)
+<div class="center-table">
+
+<table>
+  <tr>
+    <td style="text-align: center;"><img src="images/webllm.jpg" alt="WebLLM"></td>
+    <td style="text-align: center;"><a href="https://webllm.mlc.ai">WebLLM</a></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="images/huggingface.svg" alt="Hugging Face"></td>
+    <td style="text-align: center;"><a href="https://huggingface.github.io/transformers.js">Transformers.js</a></td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
@@ -217,11 +268,19 @@ TODO: screencast
 # Built-in AI
 
 - Chrome: Gemini Nano
-- Edge: Phi mini
+- Edge: Phi-4-mini
 
 ---
 
 ![bg fit](images/chromeai.png)
+
+---
+
+![bg fit](images/chromeai-api-status.png)
+
+---
+
+![bg fit](images/chromeai-flags.png)
 
 ---
 
@@ -234,9 +293,17 @@ ChromeAI Multimodal capabilities:
 
 ---
 
+TODO: screencast fot alt text generation
+
+---
+
+TODO: screencast for audio transcription
+
+---
+
 # The Case of Privacy
 
-- Data stays in browser
+- Data stays in the browser
 - No server round-trips
 - Enhanced privacy protection
 
@@ -247,15 +314,23 @@ ChromeAI Multimodal capabilities:
 - Model size
 - The model must be downloaded before use
 - Performance
-- Browser and hardware compatibility
-- Secret management
+- Browser, flags and hardware compatibility
+
+---
+
+# Secrets Management
+
+- Store secrets in the browser
+- Or use the secrets manager for custom connectors:
+  - https://github.com/jupyterlab-contrib/jupyter-secrets-manager
 
 ---
 
 # Building blocks for AI in Jupyter
 
-- Towards modular and extensible components
-- Extension authors can provide more functionalities via JupyterLab commands
+- Towards modular and extensible components:
+  - https://github.com/orgs/jupyter-ai-contrib/discussions/1
+- Extension authors can extend functionality via JupyterLab commands
 - Hybrid workflows (server + browser)
 
 ---
@@ -264,6 +339,7 @@ ChromeAI Multimodal capabilities:
 
 - Support for more models and providers
 - CLI tools via `jupyterlite-terminal`
+- Real Time Collaboration and chat
 
 ---
 
