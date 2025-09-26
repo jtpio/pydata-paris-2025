@@ -3,6 +3,7 @@
     "windowingMode": "none"
   },
   "@jupyterlite/ai:settings-model": {
+    "showTokenUsage": true,
     "useSecretsManager": false
   }
 }

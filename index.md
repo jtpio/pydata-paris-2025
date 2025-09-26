@@ -10,6 +10,10 @@ style: |
   .center {
     text-align: center;
   }
+  .center-table {
+    display: flex;
+    justify-content: center;
+  }
 ---
 
 <style>
@@ -23,7 +27,34 @@ img[alt~="center"] {
 iframe {
   border: none;
 }
+.prompt-box {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 10px 0;
+  position: relative;
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+}
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.copy-btn:hover {
+  background: #005a9e;
+}
 </style>
+
 
 <div class="center">
 
@@ -46,6 +77,33 @@ Nicolas Brichet
 - Nicolas Brichet
 - QuantStack
 
+![bg fit right:33%](images/qs.svg)
+
+---
+
+# AI in Jupyter
+
+## The state in 2025
+
+- Jupyter AI: https://github.com/jupyterlab/jupyter-ai
+  - Incubating under JupyterLab
+  - Stable (v2) - code completions, chat, magics
+  - Beta: v3 - personas (agents), MCP, RTC
+- Notebook Intelligence: https://github.com/notebook-intelligence/notebook-intelligence
+  - Independent project
+  - GitHub copilot, agents, MCP
+
+---
+
+# The AI space is moving (very) fast
+
+- What about JupyterLite?
+- AI in the browser?
+
+---
+
+# Forward-looking view on AI in Jupyter
+
 ---
 
 # Agenda
@@ -62,17 +120,39 @@ TODO
 
 ---
 
-# Introduction to JupyterLite
+# Lightweight Jupyter running in the browser
+
+- ✅ can be hosted as a static website
+- ✅ no need to install Python and other packages on the user machine
+- ✅ kernels run in the browser via WebAssembly (Pyodide, Emscripten Forge)
+- ✅ easy to embed a live Python console on your website
+
+![center h:400px](images/numpy-org.png)
+
+---
+
+# How to integrate AI in JupyterLite?
 
 ---
 
 # Chat with Remote Models
 
-Connect to AI providers, directly from your browser:
+Connect to AI providers, directly from your browser (without a Python server)
 
 - Anthropic
 - OpenAI
 - Mistral
+- Ollama
+- More via extensions
+
+---
+
+<div class="prompt-box">
+  Give suggestions to make the plot look nicer
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
 
 ---
 
@@ -82,7 +162,7 @@ TODO: screencast
 
 # Code completion
 
-- Configure a different model for code completion
+![](images/completions.png)
 
 ---
 
@@ -92,9 +172,25 @@ TODO: screencast
 
 # Agent Mode
 
+- Create new notebooks
 - Tool calling
 - Approve or reject tool calls
-- Add context
+
+---
+
+<div class="prompt-box">
+  Create a demo notebook about pandas and matplotlib
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
+
+<div class="prompt-box">
+  Now clear all the outputs and run all the cells in the notebook
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
 
 ---
 
@@ -106,7 +202,16 @@ TODO: screencast
 
 `jupyterlab-cell-diff` provides a command to display diffs under input cells:
 
-TODO: screenshot
+![a screenshot showing the diff view](images/diffs.png)
+
+---
+
+<div class="prompt-box">
+  Use `pandas` instead of `polars` in this cell
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
 
 ---
 
@@ -116,18 +221,46 @@ TODO: screencast for showing diffs
 
 # Execute JupyterLab Commands
 
-- Expose JupyterLab commands as `tools` to the agent.
-- `discover_commands` to find available commands
-- `execute_command` to execute a command
+- Expose JupyterLab commands as `tools` to the agent:
+  - `discover_commands` to find available commands
+  - `execute_command` to execute a command
 
 ---
 
+# Control JupyterLab with natural language
+
+- "toggle the right area"
+- "show the about dialog"
+- "create a new chess pawn in jupytercad"
+
+---
+
+<div class="prompt-box">
+  Create an empty .jcad file. Once opened, build a chess pawn, step by step, using the available jupytercad commands
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
+
+---
+
+TODO: screencast with JupyterCad
+
+---
+
+
 # Model Context Protocol (MCP)
 
-- open-source standard for connecting AI applications to external systems:
+- Open-source standard for connecting AI applications to external systems:
   - Tools
   - Resources
   - Prompts
+
+> Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems.
+
+https://modelcontextprotocol.io
+
+![bg fit right:20%](images/mcp.png)
 
 ---
 
@@ -143,18 +276,30 @@ TODO: screencast with DeepWiki
 
 ---
 
-# In-Browser AI
+# LLMs in the Browser
 
 - Run models directly in browser
 - No server dependencies
-- Privacy-preserving AI
+- Privacy-focused: no requests to external servers
 
 ---
 
 # In-Browser AI libraries
 
-- [Transformers.js](https://huggingface.github.io/transformers.js/)
-- [WebLLM](https://webllm.mlc.ai/)
+<div class="center-table">
+
+<table>
+  <tr>
+    <td style="text-align: center;"><img src="images/webllm.jpg" alt="WebLLM"></td>
+    <td style="text-align: center;"><a href="https://webllm.mlc.ai">WebLLM</a></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="images/huggingface.svg" alt="Hugging Face"></td>
+    <td style="text-align: center;"><a href="https://huggingface.co/docs/transformers.js/index">Transformers.js</a></td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
@@ -167,49 +312,81 @@ TODO: screencast
 # Built-in AI
 
 - Chrome: Gemini Nano
-- Edge: Phi mini
+- Edge: Phi-4-mini
+
+---
+
+![bg fit](images/chromeai.png)
+
+---
+
+![bg fit](images/chromeai-api-status.png)
+
+---
+
+![bg fit](images/chromeai-flags.png)
 
 ---
 
 # Not just about code
 
-ChromeAI Multimodal capabilities:
+ChromeAI multimodal capabilities:
 
 - Generate alt text for images
 - Transcribe audio to text
 
 ---
 
+TODO: screencast fot alt text generation
+
+---
+
+TODO: screencast for audio transcription
+
+---
+
 # The Case of Privacy
 
-- Data stays in browser
+- Data stays in the browser
 - No server round-trips
 - Enhanced privacy protection
 
 ---
 
-# Limitations of In-Browser AI
+# Limitations
 
-- Model size
+- Model size (300MB - 1GB - 22GB)
 - The model must be downloaded before use
-- Performance
-- Browser and hardware compatibility
-- Secret management
+- Performance (requires good hardware)
+- Browser, flags and hardware compatibility
+- MCP:
+  - Some remote MCP servers can work
+  - https://github.com/webmachinelearning/webmcp
+
+---
+
+# Secrets Management
+
+- Store secrets in the browser
+- Or use the secrets manager with custom connectors:
+  - https://github.com/jupyterlab-contrib/jupyter-secrets-manager
 
 ---
 
 # Building blocks for AI in Jupyter
 
-- Towards modular and extensible components
-- Extension authors can provide more functionalities via JupyterLab commands
+- Towards modular and extensible components:
+  - https://github.com/orgs/jupyter-ai-contrib/discussions/1
+- Extension authors can extend functionality via JupyterLab commands
 - Hybrid workflows (server + browser)
 
 ---
 
 # What's Next?
 
-- Support for more models and providers
+- Share components across projects to provide an extensible framework
 - CLI tools via `jupyterlite-terminal`
+- Real Time Collaboration and chat
 
 ---
 
