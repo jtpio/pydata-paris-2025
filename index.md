@@ -108,7 +108,14 @@ Nicolas Brichet
 
 # Agenda
 
-TODO
+- **JupyterLite**
+- **Remote AI Models**
+- **Agent Mode**
+- **Model Context Protocol**
+- **In-Browser LLMs**
+- **Built-in AI**
+- **Privacy & Limitations**
+- **What's Next?**
 
 ---
 
