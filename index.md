@@ -87,7 +87,7 @@ Nicolas Brichet
 
 - Jupyter AI: https://github.com/jupyterlab/jupyter-ai
   - Incubating under JupyterLab
-  - Stable: v2 - code completions, chat, magics
+  - Stable (v2) - code completions, chat, magics
   - Beta: v3 - personas (agents), MCP, RTC
 - Notebook Intelligence: https://github.com/notebook-intelligence/notebook-intelligence
   - Independent project
@@ -172,7 +172,7 @@ TODO: screencast
 
 # Agent Mode
 
-- Easily create new notebooks
+- Create new notebooks
 - Tool calling
 - Approve or reject tool calls
 
