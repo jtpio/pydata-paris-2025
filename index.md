@@ -86,12 +86,12 @@ Nicolas Brichet
 ## The state in 2025
 
 - Jupyter AI: https://github.com/jupyterlab/jupyter-ai
-  - Still incubating under JupyterLab
+  - Incubating under JupyterLab
   - Stable: v2 - code completions, chat, magics
   - Beta: v3 - personas (agents), MCP, RTC
 - Notebook Intelligence: https://github.com/notebook-intelligence/notebook-intelligence
- - Independent project
- - GitHub copilot, agents, MCP
+  - Independent project
+  - GitHub copilot, agents, MCP
 
 ---
 
@@ -120,7 +120,7 @@ TODO
 
 ---
 
-# Lightweight Jupyter Frontend running in the browser
+# Lightweight Jupyter running in the browser
 
 - ✅ can be hosted as a static website
 - ✅ no need to install Python and other packages on the user machine
@@ -137,7 +137,7 @@ TODO
 
 # Chat with Remote Models
 
-Connect to AI providers, directly from your browser:
+Connect to AI providers, directly from your browser (without a Python server)
 
 - Anthropic
 - OpenAI
@@ -353,12 +353,15 @@ TODO: screencast for audio transcription
 
 ---
 
-# Limitations of In-Browser AI
+# Limitations
 
 - Model size
 - The model must be downloaded before use
 - Performance
 - Browser, flags and hardware compatibility
+- MCP:
+  - Some remote MCP servers can work
+  - https://github.com/webmachinelearning/webmcp
 
 ---
 
@@ -381,7 +384,7 @@ TODO: screencast for audio transcription
 
 # What's Next?
 
-- Support for more models and providers
+- Share components across projects to provide an extensible framework
 - CLI tools via `jupyterlite-terminal`
 - Real Time Collaboration and chat
 
