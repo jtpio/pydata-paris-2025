@@ -728,7 +728,7 @@ wheels = [
 
 [[package]]
 name = "jupyterlab"
-version = "4.5.0a3"
+version = "4.5.0a4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "async-lru" },
@@ -745,9 +745,9 @@ dependencies = [
     { name = "tornado" },
     { name = "traitlets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/78/d3/85f8be9ce86a1fc4f9adffeec4c6257090fd4e3865a15c864470bae19adf/jupyterlab-4.5.0a3.tar.gz", hash = "sha256:3d937e4aa688653ee290b1d7f7c0b04140512082658cec728fe751589183ea56", size = 23173410, upload-time = "2025-08-15T13:33:27.424Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5c/b0/58f2e021f7d7612acda0fae8050ef01c10424f20d7a5103f30c12b08ad27/jupyterlab-4.5.0a4.tar.gz", hash = "sha256:9b786ef18e4d754957f4c2e3546163c1f96525a82be98bc1be84828c7bde9951", size = 23290817, upload-time = "2025-09-22T07:52:11.421Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/90/b6/1a3558e580a091890ac7f5d142654a40e03f45cece91153178bd29bd5006/jupyterlab-4.5.0a3-py3-none-any.whl", hash = "sha256:bcc7c4af35712d257d0078811fdc7279571ea7f32f8953a5db608c40395fab62", size = 12335111, upload-time = "2025-08-15T13:33:22.796Z" },
+    { url = "https://files.pythonhosted.org/packages/c9/9a/63b05df5e1f61a5cfe043cf54ae89e5b63a7700c8d8f1a46c3e7d3098d7d/jupyterlab-4.5.0a4-py3-none-any.whl", hash = "sha256:2e21393efdaf15599f406e401e1fe3b7b040e75a6f647c442d6dc69fc08629e1", size = 12356529, upload-time = "2025-09-22T07:52:06.864Z" },
 ]
 
 [[package]]
@@ -1006,6 +1006,22 @@ wheels = [
 ]
 
 [[package]]
+name = "notebook"
+version = "7.5.0a3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyter-server" },
+    { name = "jupyterlab" },
+    { name = "jupyterlab-server" },
+    { name = "notebook-shim" },
+    { name = "tornado" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ba/3f/5888d7c9516ff20829a17a879cc0bc76f62e3807b0505343ea28feeae451/notebook-7.5.0a3.tar.gz", hash = "sha256:91176d2b21bf5c52a1e286e5beb0d3fe46331f15ef935db8d0c889d411859bf1", size = 13938867, upload-time = "2025-09-24T09:15:25.426Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/94/73/523b433067bed0568dcb92747d327657a31cb5d6313be87a587284fd2b31/notebook-7.5.0a3-py3-none-any.whl", hash = "sha256:8263541a6eaf97b86adae0a541d3363fc7a16707e7822e96923fdfa076e8f57b", size = 14346484, upload-time = "2025-09-24T09:15:21.838Z" },
+]
+
+[[package]]
 name = "notebook-shim"
 version = "0.2.4"
 source = { registry = "https://pypi.org/simple" }
@@ -1214,6 +1230,7 @@ dependencies = [
     { name = "jupyterlite-ai" },
     { name = "jupyterlite-core" },
     { name = "jupyterlite-pyodide-kernel" },
+    { name = "notebook" },
 ]
 
 [package.metadata]
@@ -1226,6 +1243,7 @@ requires-dist = [
     { name = "jupyterlite-ai", specifier = ">=0.9.0a1" },
     { name = "jupyterlite-core", specifier = ">=0.7.0a5" },
     { name = "jupyterlite-pyodide-kernel", specifier = ">=0.7.0a2" },
+    { name = "notebook", specifier = ">=7.5.0a3" },
 ]
 
 [[package]]
