@@ -51,6 +51,7 @@ iframe {
 }
 </style>
 
+
 <div class="center">
 
 # Browser-based AI workflows in Jupyter
@@ -119,6 +120,8 @@ TODO: screencast
 # Code completion
 
 - Configure a different model for code completion
+
+![](images/completions.png)
 
 ---
 

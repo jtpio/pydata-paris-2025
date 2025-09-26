@@ -12,7 +12,7 @@
 You need to have `Node.js` installed on your machine.
 
 ```bash
-npx --yes @marp-team/marp-cli@4.2.3 index.md -o notebooks/index.html --html
+npx --yes @marp-team/marp-cli@4.2.3 index.md -o index.html --html
 ```
 
 ## Acknowledgments
