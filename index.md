@@ -81,6 +81,31 @@ Nicolas Brichet
 
 ---
 
+# AI in Jupyter
+
+## The state in 2025
+
+- Jupyter AI: https://github.com/jupyterlab/jupyter-ai
+  - Still incubating under JupyterLab
+  - Stable: v2 - code completions, chat, magics
+  - Beta: v3 - personas (agents), MCP, RTC
+- Notebook Intelligence: https://github.com/notebook-intelligence/notebook-intelligence
+ - Independent project
+ - GitHub copilot, agents, MCP
+
+---
+
+# The AI space is moving (very) fast
+
+- What about JupyterLite?
+- AI in the browser?
+
+---
+
+# Forward-looking view on AI in Jupyter
+
+---
+
 # Agenda
 
 TODO
@@ -95,7 +120,18 @@ TODO
 
 ---
 
-# Introduction to JupyterLite
+# Lightweight Jupyter Frontend running in the browser
+
+- ✅ can be hosted as a static website
+- ✅ no need to install Python and other packages on the user machine
+- ✅ kernels run in the browser via WebAssembly (Pyodide, Emscripten Forge)
+- ✅ easy to embed a live Python console on your website
+
+![center h:400px](images/numpy-org.png)
+
+---
+
+# How to integrate AI in JupyterLite?
 
 ---
 
