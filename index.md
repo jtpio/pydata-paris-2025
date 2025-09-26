@@ -166,7 +166,7 @@ TODO: screencast
 
 ---
 
-TODO: screencast
+![bg fit](images/completions-demo.png)
 
 ---
 
@@ -215,7 +215,12 @@ TODO: screencast
 
 ---
 
-TODO: screencast for showing diffs
+<video
+  controls
+  width="100%"
+  height="600px"
+  src="https://github.com/user-attachments/assets/3aaf5f66-0a6c-49c8-b6a8-dbbb8e605363">
+</video>
 
 ---
 
@@ -303,9 +308,9 @@ TODO: screencast with DeepWiki
 
 ---
 
-# WebLLM Demo
+# WebLLM
 
-TODO: screencast
+TODO
 
 ---
 
