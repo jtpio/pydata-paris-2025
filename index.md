@@ -207,7 +207,7 @@ TODO: screencast
 ---
 
 <div class="prompt-box">
-  Use `pandas` instead of `polars` in this cell
+  Use `polars` instead of `pandas` in the current cell
   <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
     Copy
   </button>
