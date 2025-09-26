@@ -191,6 +191,14 @@ TODO: screencast for showing diffs
 
 ---
 
+# JupyterLab Commands
+
+- "toggle the right area"
+- "show the about dialog"
+- "create a new chess pawn in jupytercad"
+
+---
+
 <div class="prompt-box">
   Create an empty .jcad file. Once opened, build a chess pawn, step by step, using the available jupytercad commands
   <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
