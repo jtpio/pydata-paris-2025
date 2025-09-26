@@ -73,6 +73,8 @@ Nicolas Brichet
 - Nicolas Brichet
 - QuantStack
 
+![bg fit right :33%](images/qs.svg)
+
 ---
 
 # Agenda
@@ -216,6 +218,10 @@ TODO: screencast
 
 - Chrome: Gemini Nano
 - Edge: Phi mini
+
+---
+
+![bg fit](images/chromeai.png)
 
 ---
 
