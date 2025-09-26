@@ -23,6 +23,32 @@ img[alt~="center"] {
 iframe {
   border: none;
 }
+.prompt-box {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 10px 0;
+  position: relative;
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+}
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.copy-btn:hover {
+  background: #005a9e;
+}
 </style>
 
 <div class="center">
@@ -73,6 +99,16 @@ Connect to AI providers, directly from your browser:
 - Anthropic
 - OpenAI
 - Mistral
+- Ollama
+
+---
+
+<div class="prompt-box">
+  Give suggestions to make the plot look nicer
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
 
 ---
 
@@ -106,7 +142,16 @@ TODO: screencast
 
 `jupyterlab-cell-diff` provides a command to display diffs under input cells:
 
-TODO: screenshot
+![a screenshot showing the diff view](images/diffs.png)
+
+---
+
+<div class="prompt-box">
+  Replace the use of `pandas` with `polars` in this cell
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
+    Copy
+  </button>
+</div>
 
 ---
 
