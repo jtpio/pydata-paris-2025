@@ -148,6 +148,8 @@ Nicolas Brichet
 
 # How to integrate AI in JupyterLite?
 
+https://github.com/jupyterlite/ai
+
 ---
 
 # Chat with Remote Models
@@ -399,7 +401,7 @@ ChromeAI multimodal capabilities:
 
 ---
 
-# Limitations
+# Limitations of browser-based AI
 
 - Model size (300MB - 1GB - 22GB)
 - The model must be downloaded before use
