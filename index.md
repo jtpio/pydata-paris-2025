@@ -88,7 +88,7 @@ Nicolas Brichet
 - Jupyter AI: https://github.com/jupyterlab/jupyter-ai
   - Incubating under JupyterLab
   - Stable (v2) - code completions, chat, magics
-  - Beta: v3 - personas (agents), MCP, RTC
+  - Beta (v3) - personas (agents), MCP, RTC
 - Notebook Intelligence: https://github.com/notebook-intelligence/notebook-intelligence
   - Independent project
   - GitHub copilot, agents, MCP
@@ -97,8 +97,16 @@ Nicolas Brichet
 
 # The AI space is moving (very) fast
 
+- New models
+- IDE integrations
+- CLI, TUI
+
+---
+
+# AI integration in the browser?
+
 - What about JupyterLite?
-- AI in the browser?
+- Using AI models in the browser?
 
 ---
 
@@ -209,7 +217,7 @@ Connect to AI providers, directly from your browser (without a Python server)
 
 # Accept / Reject Diffs
 
-`jupyterlab-cell-diff` provides a command to display diffs under input cells:
+`jupyterlab-cell-diff` provides a command to display diffs below input cells:
 
 ![a screenshot showing the diff view](images/diffs.png)
 
@@ -303,7 +311,7 @@ https://modelcontextprotocol.io
 
 # LLMs in the Browser
 
-- Run models directly in browser
+- Run models directly in the browser
 - No server dependencies
 - Privacy-focused: no requests to external servers
 
