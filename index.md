@@ -165,7 +165,7 @@ Connect to AI providers, directly from your browser (without a Python server)
 ---
 
 <div class="prompt-box">
-  Give suggestions to make the plot look nicer
+  Give me the Python code to print the Fibonacci sequence
   <button class="copy-btn" onclick="navigator.clipboard.writeText(this.parentElement.firstChild.textContent.trim())">
     Copy
   </button>
