@@ -81,6 +81,14 @@ Nicolas Brichet
 
 ---
 
+# The AI space is moving (very) fast
+
+- New models
+- IDE integrations
+- CLI, TUI
+
+---
+
 # AI in Jupyter
 
 ## The state in 2025
@@ -92,14 +100,6 @@ Nicolas Brichet
 - Notebook Intelligence: https://github.com/notebook-intelligence/notebook-intelligence
   - Independent project
   - GitHub copilot, agents, MCP
-
----
-
-# The AI space is moving (very) fast
-
-- New models
-- IDE integrations
-- CLI, TUI
 
 ---
 
@@ -415,7 +415,7 @@ ChromeAI multimodal capabilities:
 
 # Secrets Management
 
-- Store secrets in the browser
+- Store secrets in the browser (unsafe)
 - Or use the secrets manager with custom connectors:
   - https://github.com/jupyterlab-contrib/jupyter-secrets-manager
 
@@ -435,6 +435,7 @@ ChromeAI multimodal capabilities:
 - Share components across projects to provide an extensible framework
 - CLI tools via `jupyterlite-terminal`
 - Real Time Collaboration and chat
+- Multi chats / multi models
 
 ---
 
