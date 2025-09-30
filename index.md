@@ -421,21 +421,20 @@ ChromeAI multimodal capabilities:
 
 ---
 
+# What's Next in lite?
+
+- CLI tools via `jupyterlite-terminal`
+- Real Time Collaboration and chat
+- Multi chats / multi models
+
+---
+
 # Building blocks for AI in Jupyter
 
 - Towards modular and extensible components:
   - https://github.com/orgs/jupyter-ai-contrib/discussions/1
 - Extension authors can extend functionality via JupyterLab commands
 - Hybrid workflows (server + browser)
-
----
-
-# What's Next?
-
-- Share components across projects to provide an extensible framework
-- CLI tools via `jupyterlite-terminal`
-- Real Time Collaboration and chat
-- Multi chats / multi models
 
 ---
 
