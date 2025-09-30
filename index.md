@@ -418,6 +418,7 @@ ChromeAI multimodal capabilities:
 - Store secrets in the browser (unsafe)
 - Or use the secrets manager with custom connectors:
   - https://github.com/jupyterlab-contrib/jupyter-secrets-manager
+- proxy server
 
 ---
 
